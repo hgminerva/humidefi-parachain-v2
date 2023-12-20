@@ -23,3 +23,12 @@ raw-genesis-node-chainspec-genesis-state
 raw-genesis-node-chainspec-wasm
 raw-genesis-node-chainspec.json
 rococo-local-cfd2.json
+evolution-node-chainspec.json
+evolution-keys.txt
+raw-evolution-node-chainspec.json
+raw-evolution-node-chainspec-wasm
+raw-evolution-node-chainspec-genesis-state
+xode-node-chainspec.json
+raw-xode-node-chainspec.json
+raw-xode-node-chainspec-wasm
+raw-xode-node-chainspec-genesis-state

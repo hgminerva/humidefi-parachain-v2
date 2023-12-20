@@ -1,8 +1,8 @@
 [package]
-name = "genesis-node"
+name = "xode-node"
 version = "0.1.0"
 authors = ["Anonymous"]
-description = "A new Cumulus FRAME-based Substrate Node, ready for hacking together a parachain."
+description = "Xode Parachain Node"
 license = "Unlicense"
 homepage = "https://substrate.io"
 repository = "https://github.com/paritytech/cumulus/"
@@ -17,7 +17,7 @@ serde = { version = "1.0.163", features = ["derive"] }
 jsonrpsee = { version = "0.16.2", features = ["server"] }
 
 # Local
-humidefi-runtime = { path = "../runtime" }
+humidefi-runtime = { path = "../../runtime" }
 
 # Substrate
 frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43" }
