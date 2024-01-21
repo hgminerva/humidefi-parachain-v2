@@ -576,6 +576,13 @@ impl pallet_contracts::Config for Runtime {
 	type UnsafeUnstableInterface = ConstBool<true>;
 }
 
+// Sudo
+impl pallet_sudo::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type RuntimeCall = RuntimeCall;
+	type WeightInfo = ();
+}
+
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub enum Runtime where
@@ -615,6 +622,8 @@ construct_runtime!(
 		// Contracts
 		Contracts: pallet_contracts = 60,
 
+		// Governance
+		Sudo: pallet_sudo = 65,		
 	}
 );
 
